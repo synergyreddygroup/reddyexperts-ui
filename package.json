@@ -12,7 +12,8 @@
                               "default":  "./dist/index.js"
                           }
                 },
-    "scripts":  {
+    "scripts": {
+"prepare": "npm run build",
                     "build":  "tsc",
                     "test":  "echo \"Error: no test specified\" \u0026\u0026 exit 1",
                     "typecheck":  "tsc --noEmit"
