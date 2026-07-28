@@ -1,0 +1,36 @@
+{
+    "name":  "@reddyexperts/ui",
+    "version":  "1.0.0",
+    "description":  "Shared React UI components",
+    "main":  "dist/index.js",
+    "types":  "dist/index.d.ts",
+    "type":  "module",
+    "exports":  {
+                    ".":  {
+                              "types":  "./dist/index.d.ts",
+                              "import":  "./dist/index.js",
+                              "default":  "./dist/index.js"
+                          }
+                },
+    "scripts":  {
+                    "build":  "tsc",
+                    "test":  "echo \"Error: no test specified\" \u0026\u0026 exit 1",
+                    "typecheck":  "tsc --noEmit"
+                },
+    "dependencies":  {
+                         "@reddyexperts/design-system":  "file:../reddyexperts-design-system",
+                         "lucide-react":  "^0.344.0",
+                         "react":  "^19.0.0",
+                         "react-dom":  "^19.0.0",
+                         "@radix-ui/react-slot":  "^1.0.2"
+                     },
+    "devDependencies":  {
+                            "typescript":  "^5.0.0",
+                            "@types/react":  "^19.2.14",
+                            "@types/react-dom":  "^19.2.3"
+                        },
+    "peerDependencies":  {
+                             "react":  "^18.2.0 || ^19.0.0",
+                             "react-dom":  "^18.2.0 || ^19.0.0"
+                         }
+}
